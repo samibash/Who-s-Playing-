@@ -1,5 +1,5 @@
-NAME:
-# WHOS PLAYING?
+# TITLE:
+	WHOS PLAYING?
 
 # DESCRIPTION:
 I’m building a React application that takes users’ input (artist name) about which artist they want to see live. And then it returns all of the live shows that they’re playing in and out of the U.S., if they’re currently on tour or not.
