@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class HomePage extends Component {
+class ListResult extends Component {
     constructor() {
         super()
         this.state = {
@@ -21,4 +21,4 @@ class HomePage extends Component {
 }
 
 
-export default HomePage
+export default ListResult

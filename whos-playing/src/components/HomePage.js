@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SearchBar from "./SearchBar";
 
 class HomePage extends Component {
     constructor() {
@@ -12,13 +13,11 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                
+                <h1>Who's Playing?</h1>
+                <SearchBar />
             </div>
         )
     }
-
-
 }
-
 
 export default HomePage

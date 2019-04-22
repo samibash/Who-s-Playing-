@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import AboutPage from './components/AboutPage'
+import HomePage from './components/HomePage'
+import Map from './components/Map/Map'
+import {Route, Link} from "react-router-dom";
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      
+      linkdata: []
     }
   }
 
@@ -19,16 +23,30 @@ class App extends Component {
       .then(response => response.json())
       .then(data => {
         console.log(data)
+        this.setState({ 
+          linkdata: data
+        })
       })
     }
+    
 
   render() {
     return (
 
       <div className="App">
-        <header className="App-header">
-          BLOOP
-        </header>
+        <nav className="Navbar">
+          <div><Link to="/">Home</Link></div>
+          <div><Link to="/about">About</Link></div>
+        </nav>
+        <main className="Main">
+          <div className="MainText">  
+            <Route path="/" exact component={HomePage}></Route>
+            <Route path="/about" component={AboutPage}></Route>
+          </div>
+          <div className="MapContainer">
+            <Map component={Map} linkdata={this.state.linkdata} />
+          </div>
+        </main>
       </div>
     );
   }
