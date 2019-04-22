@@ -12,5 +12,4 @@ I’m building a React application that takes users’ input (artist name) about
 	Menu bar component
 
 # API LINK:
-This is a link to the API documentation. I applied for an API key and currently waiting for an answer back.
-https://www.songkick.com/developer/upcoming-events-for-artist
+https://api.seatgeek.com/2/events?client_id=MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ&client_secret=627366dd78f71acab2d19c6b27df3286ea75eb558451225c7767448f0d8cde02
