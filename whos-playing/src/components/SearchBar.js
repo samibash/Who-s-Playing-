@@ -7,16 +7,17 @@ class SearchBar extends Component {
             zipcode: []
         }
         this.handleTextInput = this.handleTextInput.bind(this)
+        this.handleSubmitForm = this.handleSubmitForm.bind(this)
     }
-    
+
 
     handleTextInput(event) {
         const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
 
         const thatZip = event.target.value
         // console.log("it's that zip", thatZip)
+    
         
-
         const userInputZipcode = thatZip
         const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${userInputZipcode}&client_id=${API_KEY}`)
         fetch(urlPostal)
@@ -25,38 +26,46 @@ class SearchBar extends Component {
               this.setState({
                   zipcode: data.events
               })
-              console.log(data.events)
+              console.log(this.state.zipcode)
           })
         // console.log(urlPostal)
     }
 
-
-    componentDidMount() {
-        const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
-    
-        const url = (`https://api.seatgeek.com/2/events?client_id=${API_KEY}`)
-        console.log(url)
-        fetch(url)
-          .then(response => response.json())
-          .then(data => {
-            console.log(data)
-            this.setState({ 
-              zipcode: data
-            })
-          })
-        }
-
-
     handleSubmitForm(event) {
         event.preventDefault()
         
-        console.log("hey, you submitted your form!")
+        console.log("hey, you submitted your form!", this.state.zipcode)
 
-        // this.handleTextInput 
+        // const results = this.state.zipcode.map(zipcode => (
+        //     zipcode
+        // ))
+        // console.log(results)
     }
+
+ 
+    // componentDidMount() {
+    //     const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
+    
+    //     const url = (`https://api.seatgeek.com/2/events?client_id=${API_KEY}`)
+    //     console.log(url)
+    //     fetch(url)
+    //       .then(response => response.json())
+    //       .then(data => {
+    //         console.log(data)
+    //         this.setState({ 
+    //           zipcode: data
+    //         })
+    //       })
+    //     }
+
 
 
     render() {
+        const map = this.state.zipcode.map(zipcode => (
+            <p key={zipcode.events} className="train-item">
+                <span>{zipcode.title}</span>
+            </p>
+        ))
         return (
             <div>
                 <form className="search-form" onSubmit={this.handleSubmitForm}>
@@ -71,6 +80,9 @@ class SearchBar extends Component {
                         <button>Search</button>
                     </div>
                 </form>
+                <div>
+                    { map }
+                </div>
             </div>
         )
     }

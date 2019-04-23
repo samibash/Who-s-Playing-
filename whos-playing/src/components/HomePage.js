@@ -13,8 +13,13 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                <h1>Who's Playing?</h1>
-                <SearchBar />
+                <header>
+                    <h1>Who's Playing?</h1>
+                    <SearchBar />
+                </header>
+                <main>
+
+                </main>
             </div>
         )
     }
