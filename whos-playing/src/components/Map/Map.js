@@ -1,33 +1,42 @@
-import React, {Component} from 'react'
+// import React, {Component} from 'react'
 
-import ReactMapGL, { Marker, Popup } from 'react-map-gl'
-// import LinkPin from './LinkPin'
-// import LinnkInfo from './LinkInfo'
+// import ReactMapGL, { Marker, Popup } from 'react-map-gl'
+// // import LinkPin from './LinkPin'
+// // import LinnkInfo from './LinkInfo'
 	
 
-// console.log(process.env(REACT_APP_MAPBOX_TOKEN))
+// // console.log(process.env(REACT_APP_MAPBOX_TOKEN))
 
-const MAPBOX_TOKEN = 'pk.eyJ1Ijoic2FtaWJhc2giLCJhIjoiY2p1c24xcndnMHVpYjQzcDg0Yjl2MXlmYSJ9.mPzESeSZyLYBHGXG2K_7Ww'
+// const MAPBOX_TOKEN = 'pk.eyJ1Ijoic2FtaWJhc2giLCJhIjoiY2p1c24xcndnMHVpYjQzcDg0Yjl2MXlmYSJ9.mPzESeSZyLYBHGXG2K_7Ww'
 
 
-class Map extends Component {
-  constructor(props){
-    super(props)
+// class Map extends Component {
+//   constructor(props){
+//     super(props)
 
-    this.state = {
-        viewport: {
-        width: '80vw',
-        height: '70vh',
-        latitude: 37.7577,
-        longitude: -122.4376,
-        zoom: 12
-      },
-      popupInfo: null
-    }
-    // this._renderMarker = this._renderMarker.bind(this)
-    // this._renderPopup = this._renderPopup.bind(this)
+//     this.state = {
+//         viewport: {
+//         width: '80vw',
+//         height: '70vh',
+//         latitude: 37.7577,
+//         longitude: -122.4376,
+//         zoom: 12
+//       },
+//       popupInfo: null
+//     }
+//     // this._renderMarker = this._renderMarker.bind(this)
+//     // this._renderPopup = this._renderPopup.bind(this)
 
-  }
+//   }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -65,28 +74,42 @@ class Map extends Component {
 // }))
 // }
     
-  render() {
-    // console.log("Events in your area",this.props)
-    const linkdata = this.props.linkdata;
-    const { viewport } = this.state;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   render() {
+//     // console.log("Events in your area",this.props)
+//     const linkdata = this.props.linkdata;
+//     const { viewport } = this.state;
      
-    return (
-      <ReactMapGL
-        width={viewport.width}
-        height={viewport.height}
-        latitude={viewport.latitude}
-        longitude={viewport.longitude}
-        zoom={viewport.zoom}
+//     return (
+//       <ReactMapGL
+//         width={viewport.width}
+//         height={viewport.height}
+//         latitude={viewport.latitude}
+//         longitude={viewport.longitude}
+//         zoom={viewport.zoom}
         
-        onViewportChange={(viewport) => this.setState({viewport})}
-        mapboxApiAccessToken = {MAPBOX_TOKEN}>
+//         onViewportChange={(viewport) => this.setState({viewport})}
+//         mapboxApiAccessToken = {MAPBOX_TOKEN}>
 
-        {/* {linkdata.map(this._renderMarker)} */}
+//         {/* {linkdata.map(this._renderMarker)} */}
 
-        </ReactMapGL>
+//         </ReactMapGL>
 
-    )
-  }
-}
+//     )
+//   }
+// }
     
-export default Map
+// export default Map

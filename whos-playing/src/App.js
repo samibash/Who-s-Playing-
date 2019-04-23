@@ -2,33 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import AboutPage from './components/AboutPage'
 import HomePage from './components/HomePage'
-import Map from './components/Map/Map'
+// import Map from './components/Map/Map'
 import {Route, Link} from "react-router-dom";
 
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      linkdata: []
-    }
-  }
-
-
-  componentDidMount() {
-    const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
-
-    const url = (`https://api.seatgeek.com/2/events?client_id=${API_KEY}`)
-    console.log(url)
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        this.setState({ 
-          linkdata: data
-        })
-      })
-    }
-    
+export default class App extends Component {
 
   render() {
     return (
@@ -43,13 +20,11 @@ class App extends Component {
             <Route path="/" exact component={HomePage}></Route>
             <Route path="/about" component={AboutPage}></Route>
           </div>
-          <div className="MapContainer">
+          {/* <div className="MapContainer">
             <Map component={Map} linkdata={this.state.linkdata} />
-          </div>
+          </div> */}
         </main>
       </div>
     );
   }
 }
-
-export default App;
