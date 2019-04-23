@@ -13,7 +13,7 @@ class HomePage extends Component {
         return (
             <div>
                 <header>
-                    <h1>Who's Playing?</h1>
+                    <h1>Who's  Playing?</h1>
                     <SearchBar />
                 </header>
                 <main>

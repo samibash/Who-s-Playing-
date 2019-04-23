@@ -53,18 +53,18 @@ class SearchBar extends Component {
     render() {
         const map = this.state.zipcode.map((zipcodeInfo, index) => (
             <p key={index} className="train-item">
-                <span>{zipcodeInfo.title}</span>
+                <span className="Title">Event: {zipcodeInfo.title}</span>
                 <br/>
-                <span>{zipcodeInfo.venue.address}</span>
+                <span className="Address">Address: {zipcodeInfo.venue.address}</span>
                 <br/>
-                <span>{zipcodeInfo.type}</span>
+                <span className="Link">Get Tickets: <a href={zipcodeInfo.url}>TiX</a></span>
             </p>
         ))
         return (
             <div>
                 <form className="search-form" onSubmit={this.handleSubmitForm}>
                     <div>
-                        <label>Enter zipcode </label>
+                        <label>Enter zipcode here </label>
                         <input
                             type="text"
                             name="input"
