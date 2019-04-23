@@ -10,7 +10,7 @@ class SearchBar extends Component {
         this.handleSubmitForm = this.handleSubmitForm.bind(this)
     }
 
-    
+
 
     handleSubmitForm(event) {
         event.preventDefault()
@@ -64,8 +64,7 @@ class SearchBar extends Component {
             <div>
                 <form className="search-form" onSubmit={this.handleSubmitForm}>
                     <div>
-                        <p>Seriously, who's playing...</p>
-                        <label>Enter zipcode</label>
+                        <label>Enter zipcode </label>
                         <input
                             type="text"
                             name="input"

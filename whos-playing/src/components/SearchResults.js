@@ -12,7 +12,6 @@ class SearchResults extends Component {
     render() {
         return (
             <div>
-                {this.props.map}
             </div>
         )
     }
