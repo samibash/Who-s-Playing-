@@ -11,26 +11,6 @@ class SearchBar extends Component {
     }
 
 
-    handleTextInput(event) {
-        const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
-
-        const thatZip = event.target.value
-        // console.log("it's that zip", thatZip)
-    
-        
-        const userInputZipcode = thatZip
-        const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${userInputZipcode}&client_id=${API_KEY}`)
-        fetch(urlPostal)
-          .then(response => response.json())
-          .then(data => {
-              this.setState({
-                  zipcode: data.events
-              })
-              console.log(this.state.zipcode)
-          })
-        // console.log(urlPostal)
-    }
-
     handleSubmitForm(event) {
         event.preventDefault()
         
@@ -40,6 +20,26 @@ class SearchBar extends Component {
         //     zipcode
         // ))
         // console.log(results)
+    }
+
+    handleTextInput(event) {
+        const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
+
+        const thatZip = event.target.value
+        // console.log("it's that zip", thatZip)
+    
+        // const userInputZipcode = thatZip
+        
+        const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${thatZip}&client_id=${API_KEY}`)
+        fetch(urlPostal)
+          .then(response => response.json())
+          .then(data => {
+              this.setState({
+                  zipcode: data.events
+              })
+              console.log(this.state.zipcode)
+          })
+        // console.log(urlPostal)
     }
 
  
@@ -61,16 +61,20 @@ class SearchBar extends Component {
 
 
     render() {
-        const map = this.state.zipcode.map(zipcode => (
-            <p key={zipcode.events} className="train-item">
-                <span>{zipcode.title}</span>
+        const map = this.state.zipcode.map(zipcodeInfo => (
+            <p key={zipcodeInfo} className="train-item">
+                <span>{zipcodeInfo.title}</span>
+                <br/>
+                <span>{zipcodeInfo.venue.address}</span>
+                <br/>
+                <span>{zipcodeInfo.type}</span>
             </p>
         ))
         return (
             <div>
                 <form className="search-form" onSubmit={this.handleSubmitForm}>
                     <div>
-                        <p>Here's a searchbar</p>
+                        <p>Seriously, who's playing...</p>
                         <label>Enter zipcode</label>
                         <input
                             type="text"

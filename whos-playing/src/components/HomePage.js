@@ -18,7 +18,6 @@ class HomePage extends Component {
                     <SearchBar />
                 </header>
                 <main>
-
                 </main>
             </div>
         )
