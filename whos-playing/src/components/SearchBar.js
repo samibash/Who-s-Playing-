@@ -6,29 +6,19 @@ class SearchBar extends Component {
         this.state = {
             zipcode: []
         }
-        this.handleTextInput = this.handleTextInput.bind(this)
+        // this.handleTextInput = this.handleTextInput.bind(this)
         this.handleSubmitForm = this.handleSubmitForm.bind(this)
     }
 
+    
 
     handleSubmitForm(event) {
         event.preventDefault()
+        console.log(event.target.input.value)
         
-        console.log("hey, you submitted your form!", this.state.zipcode)
-
-        // const results = this.state.zipcode.map(zipcode => (
-        //     zipcode
-        // ))
-        // console.log(results)
-    }
-
-    handleTextInput(event) {
+        // console.log("hey, you submitted your form!", this.state.zipcode)
         const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
-
-        const thatZip = event.target.value
-        // console.log("it's that zip", thatZip)
-    
-        // const userInputZipcode = thatZip
+        const thatZip = event.target.input.value
         
         const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${thatZip}&client_id=${API_KEY}`)
         fetch(urlPostal)
@@ -39,30 +29,30 @@ class SearchBar extends Component {
               })
               console.log(this.state.zipcode)
           })
-        // console.log(urlPostal)
     }
 
- 
-    // componentDidMount() {
-    //     const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
+
     
-    //     const url = (`https://api.seatgeek.com/2/events?client_id=${API_KEY}`)
-    //     console.log(url)
-    //     fetch(url)
+    // handleTextInput(event) {
+    //     const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
+    //     const thatZip = event.target.value
+        
+    //     const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${thatZip}&client_id=${API_KEY}`)
+    //     fetch(urlPostal)
     //       .then(response => response.json())
     //       .then(data => {
-    //         console.log(data)
-    //         this.setState({ 
-    //           zipcode: data
-    //         })
+    //           this.setState({
+    //               zipcode: data.events
+    //           })
+    //           console.log(this.state.zipcode)
     //       })
-    //     }
+    // }
 
 
 
     render() {
-        const map = this.state.zipcode.map(zipcodeInfo => (
-            <p key={zipcodeInfo} className="train-item">
+        const map = this.state.zipcode.map((zipcodeInfo, index) => (
+            <p key={index} className="train-item">
                 <span>{zipcodeInfo.title}</span>
                 <br/>
                 <span>{zipcodeInfo.venue.address}</span>
@@ -78,10 +68,10 @@ class SearchBar extends Component {
                         <label>Enter zipcode</label>
                         <input
                             type="text"
-                            name="name"
+                            name="input"
                             onChange={this.handleTextInput}
                         />
-                        <button>Search</button>
+                        <button type="submit">Search</button>
                     </div>
                 </form>
                 <div>
@@ -90,8 +80,6 @@ class SearchBar extends Component {
             </div>
         )
     }
-
-
 }
 
 
