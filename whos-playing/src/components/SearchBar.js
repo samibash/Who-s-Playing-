@@ -53,7 +53,8 @@ class SearchBar extends Component {
     render() {
         const map = this.state.zipcode.map((zipcodeInfo, index) => (
             <p key={index} className="train-item">
-                <span className="Title">Event: {zipcodeInfo.title}</span>
+                <br/>
+                <span className="Title">{zipcodeInfo.title}</span>
                 <br/>
                 <span className="Address">Address: {zipcodeInfo.venue.address}</span>
                 <br/>
