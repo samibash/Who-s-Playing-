@@ -58,7 +58,8 @@ class SearchBar extends Component {
                 <br/>
                 <span className="Address">Address: {zipcodeInfo.venue.address}</span>
                 <br/>
-                <span className="Link">Get Tickets: <a href={zipcodeInfo.url}>TiX</a></span>
+                <span className="Link">Get Tickets:</span>
+                <button className="Anchor"><span><a href={zipcodeInfo.url}>TiX</a></span></button>
             </p>
         ))
         return (
@@ -71,7 +72,7 @@ class SearchBar extends Component {
                             name="input"
                             onChange={this.handleTextInput}
                         />
-                        <button type="submit">Search</button>
+                        <button type="Submit">Search</button>
                     </div>
                 </form>
                 <div>

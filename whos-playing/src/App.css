@@ -4,10 +4,11 @@
 }
 
 .Navbar {
-  background-color: rgba(red, green, blue, 0.4);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   padding: 10px 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: double #555;
 }
 
 .Main {
@@ -70,8 +71,20 @@ h1, h2 {
 }
 
 a {
-  text-decoration: none;
-  color: rgba(rgb(139, 21, 21), rgb(72, 151, 72), rgb(56, 56, 196), 0.4);
+  text-decoration: none;  
+}
+
+.Anchor {
+  font-size: 10px;
+  background-color: green;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.Submit {
+  background-color: green;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .Hello {
