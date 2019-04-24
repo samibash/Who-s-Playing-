@@ -21,6 +21,10 @@ Used fetch.
 # API LINK:
 https://api.seatgeek.com/2/events?client_id=MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ&client_secret=627366dd78f71acab2d19c6b27df3286ea75eb558451225c7767448f0d8cde02
 
+# WIREFRAMES:
+![IMG_4924](https://user-images.githubusercontent.com/45145737/56686377-d7ee5780-66a1-11e9-995d-ae2157063723.JPG)
+![IMG_4925](https://user-images.githubusercontent.com/45145737/56686387-de7ccf00-66a1-11e9-868f-de8bbcb6722b.JPG)
+
 # HELPFUL LINKS I USED:
 
 For the fonts and design of my application I used:
