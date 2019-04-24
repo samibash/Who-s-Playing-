@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 
-class SearchBar extends Component {
+export default class SearchBar extends Component {
     constructor() {
         super()
         this.state = {
             zipcode: []
         }
-        // this.handleTextInput = this.handleTextInput.bind(this)
         this.handleSubmitForm = this.handleSubmitForm.bind(this)
     }
 
@@ -14,22 +13,20 @@ class SearchBar extends Component {
 
     handleSubmitForm(event) {
         event.preventDefault()
-        console.log(event.target.input.value)
-        
-        // console.log("hey, you submitted your form!", this.state.zipcode)
+
         const API_KEY = "MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ"
         const thatZip = event.target.input.value
-        
         const urlPostal = (`https://api.seatgeek.com/2/events?postal_code=${thatZip}&client_id=${API_KEY}`)
+
         fetch(urlPostal)
           .then(response => response.json())
           .then(data => {
               this.setState({
                   zipcode: data.events
               })
-              console.log(this.state.zipcode)
           })
     }
+
 
 
     render() {
@@ -64,6 +61,3 @@ class SearchBar extends Component {
         )
     }
 }
-
-
-export default SearchBar
