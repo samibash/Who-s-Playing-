@@ -1,0 +1,115 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  font-family: 'Verdana', sans-serif;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: double #555;
+}
+
+.Main {
+  width: 1280px;
+  height: 1460px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MainText {
+  text-align: center;
+  color: #c9d0d4; 
+  font-family: 'Verdana', sans-serif; 
+  font-size: 16px; 
+  line-height: 26px; 
+  text-indent: 30px; 
+  margin: 0; 
+}
+
+.MapContainer {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  color: #c9d0d4; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 56px; 
+  font-weight: 100; 
+  line-height: 50px; 
+  letter-spacing: 8px; 
+  padding: 20px 0 20px; 
+  border-bottom: double #555; 
+}
+
+
+.Title {
+  color: #c9d0d4; 
+  font-family: 'Verdana', sans-serif; 
+  font-size: 22px; 
+  line-height: 26px; 
+  text-indent: 30px; 
+}
+
+.Address {
+  color: #c9d0d4; 
+  font-family: 'Verdana', sans-serif; 
+  font-size: 14px; 
+  line-height: 26px; 
+  text-indent: 30px; 
+}
+
+.Type {
+  color: #c9d0d4; 
+  font-family: 'Verdana', sans-serif; 
+  font-size: 12px; 
+  line-height: 26px; 
+  text-indent: 30px; 
+}
+
+a {
+  text-decoration: none;  
+}
+
+.Anchor {
+  font-size: 10px;
+  background-color: rgb(183, 238, 111);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.search-form {
+  padding: 40px 0 40px;
+}
+
+.Search {
+  background-color: #4682b4;
+  border-radius: 10px;
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Verdana', sans-serif; 
+  text-align: center;
+  margin: 0;
+}
+
+.Hello {
+  font-weight: 100; 
+  line-height: 50px; 
+  letter-spacing: 14px;
+  word-spacing: 12px; 
+}
+
+.About-stuff {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.Small-text {
+  font-size: 6px;
+  width: 600px;
+  margin: 0 auto;
+}
