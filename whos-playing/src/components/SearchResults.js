@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import SearchBar from "./SearchBar";
+
 
 class SearchResults extends Component {
     constructor() {
@@ -12,6 +14,7 @@ class SearchResults extends Component {
     render() {
         return (
             <div>
+                <SearchBar />
             </div>
         )
     }

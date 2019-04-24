@@ -19,8 +19,6 @@ class MapRendering extends Component {
             </div>
         )
     }
-
-
 }
 
 
