@@ -16,5 +16,7 @@ https://api.seatgeek.com/2/events?client_id=MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ&clien
 
 # HELPFUL LINKS I USED:
 https://wdexplorer.com/20-examples-beautiful-css-typography-design/
+
 https://preview.freelogodesign.org/?lang=EN&name=Whos%20Playing&logo=8fec65bf-db15-4e05-8506-6999057c6ba7
+
 https://bulma.io/documentation/components/navbar/#navbar-menu
