@@ -8,7 +8,6 @@ I’m building a React application that takes users’ input (artist name) about
 	Home page component
 	About page component
 	Search bar component
-	Search results component
 	Menu bar component
 
 # API LINK:
