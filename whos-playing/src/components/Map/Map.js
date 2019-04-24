@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
-import ReactMapGL, { Marker, Popup } from 'react-map-gl'
+import ReactMapGL from 'react-map-gl'
+// { Marker, Popup } 
 // import LinkPin from './LinkPin'
 // import LinnkInfo from './LinkInfo'
 	
@@ -15,13 +16,14 @@ class Map extends Component {
     super(props)
 
     this.state = {
-        viewport: {
-        width: '80vw',
-        height: '70vh',
-        latitude: 37.7577,
-        longitude: -122.4376,
-        zoom: 12
-      },
+        viewport: 
+            {
+                width: '80vw',
+                height: '70vh',
+                latitude: 37.7577,
+                longitude: -122.4376,
+                zoom: 12
+            },
       popupInfo: null
     }
     // this._renderMarker = this._renderMarker.bind(this)
@@ -90,7 +92,7 @@ class Map extends Component {
 
   render() {
     // console.log("Events in your area",this.props)
-    const linkdata = this.props.linkdata;
+    // const linkdata = this.props.linkdata;
     const { viewport } = this.state;
      
     return (

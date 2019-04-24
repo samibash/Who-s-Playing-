@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Map from '../components/Map/Map';
 
-class MapRendering extends Component {
+export default class MapRendering extends Component {
     constructor() {
         super()
         this.state = {
@@ -20,6 +20,3 @@ class MapRendering extends Component {
         )
     }
 }
-
-
-export default MapRendering
