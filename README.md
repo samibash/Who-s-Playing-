@@ -2,7 +2,15 @@
 	WHOS PLAYING?
 
 # DESCRIPTION:
-I’m building a React application that takes users’ input (artist name) about which artist they want to see live. And then it returns all of the live shows that they’re playing in and out of the U.S., if they’re currently on tour or not.
+I’m building a React application that takes the user's zipcode (input), then returns all of the live shows, sporting events, and performances that are happening near them.
+
+# SOFTWARE USED:
+Built using React (create react-app); styled using CSS; and created a navbar with the Bulma framework.
+##
+The API that my app is consuming: SeatGeek API.
+##
+Used the GET method for my HTTP requests. 
+Used fetch.
 
 # COMPONENTS:
 	Home page component
