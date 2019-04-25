@@ -7,6 +7,12 @@ My goal for this project was to build a React application that takes in the user
 #### HEROKU DEPLOYMENT:
 https://whos-play.herokuapp.com/
 
+#### HEROKU SCREENSHOTS:
+![Screen Shot 2019-04-25 at 2 34 25 PM](https://user-images.githubusercontent.com/45145737/56759686-87413200-6767-11e9-95fc-5cd5c1241f06.png)
+![Screen Shot 2019-04-25 at 2 31 08 PM](https://user-images.githubusercontent.com/45145737/56759684-87413200-6767-11e9-8aa1-e853274b2072.png)
+![Screen Shot 2019-04-25 at 2 31 26 PM](https://user-images.githubusercontent.com/45145737/56759685-87413200-6767-11e9-8539-b453923dbce7.png)
+
+
 # SOFTWARE USED:
 Built using React (create react-app); styled using CSS; and created a navbar with the Bulma framework.
 ##
