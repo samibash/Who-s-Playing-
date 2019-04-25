@@ -24,6 +24,7 @@ export default class SearchBar extends Component {
               this.setState({
                   zipcode: data.events
               })
+              console.log(this.state.zipcode[0].venue.location)
           })
     }
 
