@@ -1,5 +1,5 @@
 # TITLE:
-	WHOS PLAYING?
+Who's Playing?
 
 # DESCRIPTION:
 I’m building a React application that takes the user's zipcode (input), then returns all of the live shows, sporting events, and performances that are happening near them.
