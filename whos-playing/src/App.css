@@ -92,7 +92,6 @@ a {
   font-size: 12px;
   color: hsl(0, 0%, 100%);
   font-family: 'Verdana', sans-serif; 
-  text-align: center;
   margin: 0;
 }
 
@@ -114,7 +113,7 @@ a {
   margin: 0 auto;
 }
 
-
+/* CSS animation from this site: https://github.com/IanLunn/Hover */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;

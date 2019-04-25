@@ -19,8 +19,8 @@ class Map extends Component {
             {
                 width: '80vw',
                 height: '70vh',
-                latitude: 37.7577,
-                longitude: -122.4376,
+                latitude: 40.71956,
+                longitude: -73.93716,
                 zoom: 12
             },
       popupInfo: null
