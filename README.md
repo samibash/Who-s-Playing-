@@ -27,8 +27,9 @@ https://api.seatgeek.com/2/events?client_id=MTYyOTYyOTF8MTU1NTY5OTI3Mi41NQ&clien
 
 # HELPFUL LINKS I USED:
 
-For the fonts and design of my application I used:
+For the CSS and design of my application I used:
 https://wdexplorer.com/20-examples-beautiful-css-typography-design/
+https://github.com/IanLunn/Hover
 
 For the logo in the top left corner of my site I used:
 https://preview.freelogodesign.org/?lang=EN&name=Whos%20Playing&logo=8fec65bf-db15-4e05-8506-6999057c6ba7
