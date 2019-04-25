@@ -3,6 +3,8 @@ Who's Playing?
 
 # DESCRIPTION:
 I’m building a React application that takes the user's zipcode (input), then returns all of the live shows, sporting events, and performances that are happening near them.
+#### HEROKU DEPLOYMENT:
+https://whos-play.herokuapp.com/
 
 # SOFTWARE USED:
 Built using React (create react-app); styled using CSS; and created a navbar with the Bulma framework.
