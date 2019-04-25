@@ -8,6 +8,7 @@ export default class AboutPage extends Component {
                 <br/>
                 <p className="Hello" className="hvr-grow">Hello, cyber-traveler</p>
                 <br/>
+                <br/>
                 <div className="About-stuff">
                     <p>We are <em>Who's Playing</em> -- a fully functional application that collects the most up to date information on
                     events, performances, and shows that are happening near you.
