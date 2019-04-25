@@ -1,4 +1,6 @@
-# Who's Playing?
+
+# TITLE: 
+Who's Playing?
 
 # SUMMARY:
 My goal for this project was to build a React application that takes in the user's zipcode (either the zipcode where the user resides, or the zipcode for a place where the user would like to go see shows/events at), then return all of the live shows, sporting events, and performances that are happening in an area near the zipcode that they inputted.
