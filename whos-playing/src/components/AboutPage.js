@@ -3,10 +3,11 @@ import React, { Component } from "react";
 export default class AboutPage extends Component {
     render() {
         return (
-            <div>
+            <div className="AboutH2">
                 <h2>About</h2>
                 <br/>
                 <p className="Hello" className="hvr-grow">Hello, cyber-traveler</p>
+                <br/>
                 <br/>
                 <div className="About-stuff">
                     <p>We are <em>Who's Playing</em> -- a fully functional application that collects the most up to date information on
