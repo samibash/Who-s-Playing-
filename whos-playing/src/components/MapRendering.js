@@ -2,19 +2,13 @@ import React, { Component } from 'react';
 import Map from '../components/Map/Map';
 
 export default class MapRendering extends Component {
-    constructor() {
-        super()
-        this.state = {
-
-        }
-    }
-
-
     render() {
         return (
             <div>
+                <h2>Map</h2>
+                <br/>
                 <div className="MapContainer">
-                    <Map component={Map} linkdata={this.state.linkdata} />
+                    <Map component={Map} linkdata={this.props.linkdata} />
                 </div>
             </div>
         )

@@ -1,26 +1,15 @@
 import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 
-class HomePage extends Component {
-    constructor() {
-        super()
-        this.state = {
-        }
-    }
-
-
+export default class HomePage extends Component {
     render() {
         return (
             <div>
                 <header>
-                    <h1>Who's  Playing?</h1>
+                    <h1 className="hvr-grow">Who's  Playing?</h1>
                     <SearchBar />
                 </header>
-                <main>
-                </main>
             </div>
         )
     }
 }
-
-export default HomePage

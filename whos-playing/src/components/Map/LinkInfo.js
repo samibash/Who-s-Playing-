@@ -14,5 +14,3 @@ export default class LinkInfo extends PureComponent {
 
   }
 }
-
-// export default PostOfficeInfo;
