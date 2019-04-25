@@ -5,7 +5,7 @@ export default class MapRendering extends Component {
     render() {
         return (
             <div>
-                <h2>Map</h2>
+                <h2 className="AboutH2">Map</h2>
                 <br/>
                 <div className="MapContainer">
                     <Map component={Map} linkdata={this.props.linkdata} />

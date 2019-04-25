@@ -5,7 +5,7 @@ export default class HomePage extends Component {
     render() {
         return (
             <div>
-                <header>
+                <header className="Whos">
                     <h1 className="hvr-grow">Who's  Playing?</h1>
                     <SearchBar />
                 </header>
